@@ -1,0 +1,50 @@
+.card {
+    min-width: 230px;
+    min-height: 150px;
+}
+
+.card h5 {
+    display: flex;
+    justify-content: center;
+}
+
+.card .gadgets{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card .gadgets  button{
+    background-color: #098ee0;
+    padding: 2px;
+    margin: 5px 5px 0 5px;
+
+}
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.card #all-gadgets{
+    background: black;
+    top: 0;
+    display: none;
+}
+
+#container {
+    display:  flex;
+    background: #098ee0;
+    
+}
