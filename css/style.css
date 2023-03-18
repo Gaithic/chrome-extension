@@ -37,6 +37,7 @@
   touch-action: manipulation;
 }
 
+
 .card #all-gadgets{
     background: black;
     top: 0;
@@ -46,5 +47,5 @@
 #container {
     display:  flex;
     background: #098ee0;
-    
+
 }

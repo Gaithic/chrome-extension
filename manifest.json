@@ -10,6 +10,7 @@
             "css":["./css/style.css"]
         }        
     ],
+    
     "action":{        
         "default_popup": "./page/popup.html" ,
         "discription": "Creating Chrom Extension",

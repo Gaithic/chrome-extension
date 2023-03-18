@@ -12,6 +12,7 @@ let createStartButton = document.createElement('button');
 // createStartButton.id = "start"
 // let createPauseButton  = document.createElement('button')
 // createPauseButton.innerHTML = "Puase";
+
 // createPauseButton.id = "pause";
 // let createStopButton  = document.createElement('button')
 // createStopButton.id = "stop";
