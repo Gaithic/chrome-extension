@@ -44,8 +44,9 @@
     display: none;
 }
 
-#container {
-    display:  flex;
+#container {    
+    display: none;
     background: #098ee0;
-
+    width: 100px;
+    height: 101px;
 }

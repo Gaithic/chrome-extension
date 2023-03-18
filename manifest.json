@@ -10,7 +10,10 @@
             "css":["./css/style.css"]
         }        
     ],
-    
+    "background":{
+        "service_worker": "background.js",
+        "type": "module"
+    },
     "action":{        
         "default_popup": "./page/popup.html" ,
         "discription": "Creating Chrom Extension",

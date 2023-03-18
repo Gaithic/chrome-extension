@@ -6,7 +6,7 @@ const blockAds = document.querySelector('#block_ads');
 const allGadgets = document.getElementById('all-gadgets');
 const container = document.createElement('div');
 container.id = "container";
-allGadgets.appendChild(container);
+document.body.appendChild(container);
 let createStartButton = document.createElement('button');
 // createStartButton.innerHTML = "Start";
 // createStartButton.id = "start"
@@ -19,7 +19,7 @@ let createStartButton = document.createElement('button');
 // createStopButton.innerHTML = "Stop";
 container.appendChild(createStartButton);
 colorPicker.addEventListener('click', () => {
-
+    document.getElementById('container').style.display = "block";
     // document.getElementById('all-gadgets').style.display = "block";
     // document.getElementById('all-gadgets').append(container);
     // const penElement = document.createElement("p");
@@ -27,10 +27,25 @@ colorPicker.addEventListener('click', () => {
     // document.getElementById('all-gadgets').appendChild(penElement);
 });
 
+
 //start stop and record screen recording
-screenRecorder.addEventListener('click', () => {
-    alert("hello"); 
-});
+
+async function recordScreen(displayMediaOptions){
+    let captureStream;
+    try {
+        captureStream = await navigator.mediaDevices.getDisplayMedia({
+            displayMediaOptions
+        })    
+    } catch (error) {
+        console.error(`Error: ${error}`);
+    }
+    return captureStream;
+    
+}    
+
+
+let recordingScreen = screenRecorder.addEventListener('click', recordScreen);
+document.body.append(recordingScreen);
 
 //cut, crop and copy the broswer(snipping tool functionality)
 snippingTool.addEventListener('click', () => {
